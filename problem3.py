@@ -23,5 +23,15 @@ Enter an integer:-1
 
 The largest number you entered is 92
 """
+def factor(a):
+    output = []
+    i = 2
+    while a // i > 0:
+        if a % i == 0:
+            output.append(i)
+            a //= i
+        else: i += 1
+    return(output)
 
+print(factor(12))
 
