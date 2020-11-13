@@ -1,32 +1,28 @@
 #!python3
 
 """
-Create a variable that contains an empy list.
-Ask a user to enter 5 words.  Add the words into the list.
-Print the list
+Create a list that contains the following strings, in order:
+Cat
+Fish
+Dog
+Bear
+Turtle
+
+Sort the list into alphabetical order and and then ask the user to enter a number corresponding
+to the index of an element.  Print the element associated with that index.
+
 inputs:
-string 
-string
-string
-string
-string
+integer number
 
 outputs:
-string
+string animal
 
 example:
-Enter a word: apple
-Enter a word: worm
-Enter a word: dollar
-Enter a word: shingle
-Enter a word: virus
-
-['apple', 'worm', 'dollar', 'shingle', 'virus']
+Enter the index for an animal:2
+The animal at that index is Dog
 """
-a = input("Enter a word:")
-b = input("Enter a word:")
-c = input("Enter a word:")
-d = input("Enter a word:")
-e = input("Enter a word:")
+animalslist=("Bear","Cat","Dog","Fish","Turtle")
 
-print([a,b,c,d,e])
+a = int(input("The animals is:"))
+
+print("The animal at that index is:" + animalslist[a])
